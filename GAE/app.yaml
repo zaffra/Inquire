@@ -1,0 +1,12 @@
+# Modify the application name to match your app engine name
+application: inquire 
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /.*
+  script: django_bootstrap.py
+
+builtins:
+- datastore_admin: on
